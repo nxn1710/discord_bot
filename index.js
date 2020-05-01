@@ -83,7 +83,7 @@ bot.on('message', async message => {
                 .setThumbnail('https://i.pinimg.com/originals/f3/2d/d2/f32dd26a74a9277a3963060500c7b5a1.png')
                 .addFields(
                     { name: ':book: Subject', value: 'WED201c', inline: true },
-                    { name: ':clock9: Time', value: '7h30', inline: true },
+                    { name: ':clock9: Time', value: '13h00', inline: true },
                     { name: ':calendar_spiral: Date', value: '04/05/2020', inline: true },
                 )
                 .setTimestamp()
@@ -115,7 +115,7 @@ bot.on('message', async message => {
                 )
                 .addFields(
                     { name: ':book: Subject', value: 'WED201c', inline: true },
-                    { name: ':clock9: Time', value: '7h30', inline: true },
+                    { name: ':clock9: Time', value: '13h00', inline: true },
                     { name: ':calendar_spiral: Date', value: '09/05/2020', inline: true },
                 )
                 .setTimestamp()
