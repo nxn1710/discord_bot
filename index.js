@@ -99,21 +99,6 @@ bot.on('message', async message => {
                 .setDescription('-----------------------------------------------')
                 .setThumbnail('https://i.pinimg.com/originals/f3/2d/d2/f32dd26a74a9277a3963060500c7b5a1.png')
                 .addFields(
-                    { name: ':book: Subject', value: 'DBI202', inline: true },
-                    { name: ':clock9: Time', value: '15h15', inline: true },
-                    { name: ':calendar_spiral: Date', value: '27/04/2020', inline: true },
-                )
-                .addFields(
-                    { name: ':book: Subject', value: 'PRO192', inline: true },
-                    { name: ':clock9: Time', value: '13h30', inline: true },
-                    { name: ':calendar_spiral: Date', value: '28/04/2020', inline: true },
-                )
-                .addFields(
-                    { name: ':book: Subject', value: 'MAD101', inline: true },
-                    { name: ':clock9: Time', value: '15h15', inline: true },
-                    { name: ':calendar_spiral: Date', value: '28/04/2020', inline: true },
-                )
-                .addFields(
                     { name: ':book: Subject', value: 'WED201c', inline: true },
                     { name: ':clock9: Time', value: '13h00', inline: true },
                     { name: ':calendar_spiral: Date', value: '09/05/2020', inline: true },
