@@ -10,6 +10,8 @@ const fetch = require('node-fetch');
 
 const url = 'https://code.junookyo.xyz/api/ncov-moh/data.json';
 
+const ulrAPI = 'https://jav-rest-api-htpvmrzjet.now.sh/api/actress?name=';
+
 let settings = { method: "Get" };
 
 let data;
@@ -87,6 +89,73 @@ bot.on('message', async message => {
             break;
         case 'botngu':
             message.channel.send("Ngu cai dmm");
+            break;
+        case 'test':
+            const a = new MessageEmbed()
+                .setColor('#0099ff')
+                .setTitle('Some title')
+                .setURL('https://discord.js.org/')
+                .setAuthor('Some name', 'https://i.imgur.com/wSTFkRM.png', 'https://discord.js.org')
+                .setDescription('Some description here')
+                .setThumbnail('https://i.imgur.com/wSTFkRM.png')
+                .addFields(
+                    { name: 'Regular field title', value: 'Some value here' },
+                    { name: '\u200B', value: '\u200B' },
+                    { name: 'Inline field title', value: 'Some value here', inline: true },
+                    { name: 'Inline field title', value: 'Some value here', inline: true },
+                )
+                .addField('Inline field title', 'Some value here', true)
+                .setImage('https://i.imgur.com/wSTFkRM.png')
+                .setTimestamp()
+                .setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
+
+            message.channel.send(a);
+            break;
+        case 'lichhoc':
+            var random = Math.floor(Math.random() * 11);
+            const exampleEmbed5 = new MessageEmbed()
+                .setColor('#f62500')
+                .setURL('http://fap.fpt.edu.vn/Report/ScheduleOfWeek.aspx')
+                .setTitle('Lịch Học Chuyên Ngành 3 - SE1404')
+                .setDescription('-----------------------------------------------')
+                // .setThumbnail('https://i.pinimg.com/originals/f3/2d/d2/f32dd26a74a9277a3963060500c7b5a1.png')
+                .addFields(
+                    { name: 'Monday', value: 'CSD201', inline: true },
+                    { name: 'Slot', value: '4 5 6 at 202', inline: true },
+                    // { name: 'Room', value: '202', inline: true },
+                    { name: 'Start Time', value: '12h30', inline: true },
+                )
+                .addFields(
+                    { name: 'Wednesday', value: 'LAB211', inline: true },
+                    { name: 'Slot', value: '4 5 6 at 202', inline: true },
+                    // { name: 'Room', value: '202', inline: true },
+                    { name: 'Start Time', value: '12h30', inline: true },
+                )
+                .addFields(
+                    { name: 'Thursday', value: 'OSG202', inline: true },
+                    { name: 'Slot', value: '4 5 6 at 202', inline: true },
+                    // { name: 'Room', value: '202', inline: true },
+                    { name: 'Start Time', value: '12h30', inline: true },
+                )
+                .addFields(
+                    { name: 'Friday', value: 'PRJ311', inline: true },
+                    { name: 'Slot', value: '4 5 6 at 202', inline: true },
+                    // { name: 'Room', value: '202', inline: true },
+                    { name: 'Start Time', value: '12h30', inline: true },
+                )
+                .addFields(
+                    { name: 'Saturday', value: 'JPD111', inline: true },
+                    { name: 'Slot', value: '2 3 at 202', inline: true },
+                    // { name: 'Room', value: '202', inline: true },
+                    { name: 'Start Time', value: '8h45', inline: true },
+                )
+                .setTimestamp()
+                .setFooter(`Click vào title để check fap ${random}`);
+            if (random == 3 || random == 2) {
+                message.channel.send("Lên fap mà check ");
+            } else {
+                message.channel.send(exampleEmbed5);
+            }
             break;
     }
 })
