@@ -30,7 +30,7 @@ bot.on('ready', () => {
 })
 function leftToEight() {
     var d = new Date();
-    return (-d + d.setHours(6, 0, 0, 0));
+    return (-d + d.setHours(8, 0, 0, 0));
 }
 
 function sendMessage() {
