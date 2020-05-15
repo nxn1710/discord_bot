@@ -15,15 +15,36 @@ const ulrAPI = 'https://jav-rest-api-htpvmrzjet.now.sh/api/actress?name=Mikami';
 let settings = { method: "Get" };
 
 let data;
+// var server = client.guilds..get('serverID');
+
 
 bot.on('ready', () => {
     console.log('This bot is online!');
+    setTimeout(function () { // in leftToEight() milliseconds run this:
+        sendMessage(); // send the message once
+        var dayMillseconds = 1000 * 60 * 60 * 24;
+        setInterval(function () { // repeat this every 24 hours
+            sendMessage();
+        }, dayMillseconds)
+    }, leftToEight())
 })
+function leftToEight() {
+    var d = new Date();
+    return (-d + d.setHours(6, 0, 0, 0));
+}
+
+function sendMessage() {
+    var guild = bot.guilds.cache.get('637988330188832774');
+    if (guild && guild.channels.cache.get('680276317471768578')) {
+        guild.channels.cache.get('680276317471768578').send("Good Morning");
+    }
+}
 
 
 bot.on('message', async message => {
 
     let args = message.content.substring(PREFIX.length).split(" ");
+
     switch (args[0]) {
         case 'cov':
             let covid = await fetch(url, settings)
