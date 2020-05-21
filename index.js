@@ -36,7 +36,7 @@ function leftToEight() {
 function sendMessage() {
     var guild = bot.guilds.cache.get('637988330188832774');
     if (guild && guild.channels.cache.get('680276317471768578')) {
-        guild.channels.cache.get('680276317471768578').send("Good Morning");
+        guild.channels.cache.get('680276317471768578').send("");
     }
 }
 
@@ -167,9 +167,9 @@ bot.on('message', async message => {
                 )
                 .addFields(
                     { name: 'Saturday', value: 'JPD111', inline: true },
-                    { name: 'Slot', value: '2 3 at 202', inline: true },
+                    { name: 'Slot', value: '1 2 3 at 205', inline: true },
                     // { name: 'Room', value: '202', inline: true },
-                    { name: 'Start Time', value: '8h45', inline: true },
+                    { name: 'Start Time', value: '7h00', inline: true },
                 )
                 .setTimestamp()
                 .setFooter(`Click vào title để check fap ${random}`);
