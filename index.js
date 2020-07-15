@@ -77,7 +77,7 @@ bot.on('message', async message => {
         case 'lichthi':
             const exampleEmbed3 = new MessageEmbed()
                 .setColor('#f62500')
-                .setURL('http://fap.fpt.edu.vn/temp/Import/trangntx2/7a790795-c7c2-4d73-adc9-8bdaab923925/The%20official%20exam%20schedule%20-%20L%E1%BB%8Bch%20thi%20ch%C3%ADnh%20th%E1%BB%A9c.pdf')
+                .setURL('http://fap.fpt.edu.vn/temp/Import/trangntx2/121c2f1d-b2f8-48e7-bdef-93070da22581/CN%20SU20.pdf')
                 .setTitle('Lịch Thi Chuyên Ngành 3')
                 .setAuthor('Nxn1710', 'https://scontent.fdad1-1.fna.fbcdn.net/v/t1.0-9/91056560_2719907111629224_8061680943468904448_n.png?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=fDwnKX0OCvAAX97o5gg&_nc_ht=scontent.fdad1-1.fna&oh=1ec5daee2074f635c9443a42c90c7666&oe=5EBCB61B', 'https://fb.com/nxn1710')
                 .setDescription('-----------------------------------------------')
@@ -109,7 +109,7 @@ bot.on('message', async message => {
         case 'retake':
             const exampleEmbed4 = new MessageEmbed()
                 .setColor('#f62500')
-                .setURL('http://fap.fpt.edu.vn/temp/Import/trangntx2/7a790795-c7c2-4d73-adc9-8bdaab923925/The%20official%20exam%20schedule%20-%20L%E1%BB%8Bch%20thi%20ch%C3%ADnh%20th%E1%BB%A9c.pdf')
+                .setURL('http://fap.fpt.edu.vn/temp/Import/trangntx2/121c2f1d-b2f8-48e7-bdef-93070da22581/CN%20SU20.pdf')
                 .setTitle('Lịch Thi Retake Chuyên Ngành 3')
                 .setAuthor('Nxn1710', 'https://scontent.fdad1-1.fna.fbcdn.net/v/t1.0-9/91056560_2719907111629224_8061680943468904448_n.png?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=fDwnKX0OCvAAX97o5gg&_nc_ht=scontent.fdad1-1.fna&oh=1ec5daee2074f635c9443a42c90c7666&oe=5EBCB61B', 'https://fb.com/nxn1710')
                 .setDescription('-----------------------------------------------')
