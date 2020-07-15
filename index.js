@@ -104,6 +104,7 @@ bot.on('message', async message => {
                 )
                 .setTimestamp()
                 .setFooter('Good Luck', 'https://stickershop.line-scdn.net/stickershop/v1/product/1298618/LINEStorePC/main.png;compress=true');
+            message.channel.send(exampleEmbed3);
             break;
         case 'retake':
             const exampleEmbed4 = new MessageEmbed()
@@ -136,7 +137,6 @@ bot.on('message', async message => {
                 .setTimestamp()
                 .setFooter('Good Luck', 'https://stickershop.line-scdn.net/stickershop/v1/product/1298618/LINEStorePC/main.png;compress=true');
             message.channel.send(exampleEmbed4);
-            message.channel.send("Take cái db");
             break;
         case 'botngu':
             message.channel.send("Ngu cai dmm");
