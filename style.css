@@ -1,0 +1,37 @@
+.jumbotron {
+    background-color: #9575CD;
+    margin-bottom: 0;
+}
+
+.history {
+    margin: 40px 0;
+}
+
+.footer {
+    background-color: #D1C4E9;
+}
+
+.header__nav {
+    background-color: #5133A5;
+}
+
+.header__logo {
+    width: 300px;
+    height: 100px;
+}
+
+.btn-yellow {
+    background-color: #FDC02F;
+    width: 250px;
+    height: 50px;
+    line-height: 40px;
+    margin-top: 40px;
+}
+
+.row-header {
+    color: #fff;
+}
+
+.my-10 {
+    margin: 100px 0;
+}
